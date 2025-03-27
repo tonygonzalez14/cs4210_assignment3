@@ -42,7 +42,7 @@ for learning_rate in n: # iterates over n
             else:
                 clf = MLPClassifier(activation="logistic",
                                     learning_rate_init=learning_rate,
-                                    hidden_layer_sizes=25,
+                                    hidden_layer_sizes=(25,),
                                     shuffle=shuffle_option,
                                     max_iter=1000)
 
